@@ -1,7 +1,7 @@
 
 .data
 count: .word    1
-str1:     .string "Kakutani theorem ("
+str1:     .string "Collatz conjecture ("
 str2:     .string ") = "
 
 .text
