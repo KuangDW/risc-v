@@ -52,7 +52,7 @@ int main(void)
 { 
     int n=10; 
     int step=f(n); 
-    printf("Kakutani theorem %d = (%d)",n,step);
+    printf("Collatz conjecture (%d) = %d",n,step);
 }
 ```
 
@@ -100,7 +100,7 @@ call f(3*n+1) and count++
 ```cpp=
 .data
 count: .word    0
-str1:  .string "Kakutani theorem ("
+str1:  .string "Collatz conjecture ("
 str2:  .string ") = "
 
 .text
