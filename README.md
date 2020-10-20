@@ -6,7 +6,7 @@ contributed by < `Kuang Da` >
 - [x] Your program(s) MUST contain loops (or recursive calls) and conditional branches.
 - [x] You have to ensure the program fully functioned with Ripes simulator.
 - [ ] Explain your program with the visualization for multiplexer input selection, register write/enable signals and more.
-- [ ] Illustrate each stage such as IF, ID, IE, MEM, and WB.
+- [x] Illustrate each stage such as IF, ID, IE, MEM, and WB.
 - [ ] Discuss the steps of memory updates accordingly.
 
 ## Collatz conjecture
@@ -100,7 +100,7 @@ call f(3*n+1) and count++
 ```cpp=
 .data
 count: .word    0
-str1:  .string "Collatz conjecture ("
+str1:  .string "Kakutani theorem ("
 str2:  .string ") = "
 
 .text
@@ -218,3 +218,26 @@ In write back stage we can see addi will write  0x0000000A (10) to x10 register.
 ![](https://i.imgur.com/vtAlBZZ.png)
 ![](https://i.imgur.com/XPO5skd.png)
 ![](https://i.imgur.com/GUikYPI.png)
+
+
+
+
+## Other issue in pipeline CPU
+
+* Pipeline flush caused by a jump
+
+![](https://i.imgur.com/sUJxpEL.png)
+![](https://i.imgur.com/1zuxHsY.png)
+
+* Pipeline stall caused by a exall
+
+![](https://i.imgur.com/iAk0Wyx.png)
+
+![](https://i.imgur.com/E0WvkrB.png)
+![](https://i.imgur.com/JNOd9tD.png)
+![](https://i.imgur.com/A3zwXOM.png)
+
+
+
+
+
